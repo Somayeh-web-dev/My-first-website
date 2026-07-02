@@ -1,30 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>Parfum | Luxury Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parfum | Pure Elegance</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background: #f4f4f4; }
-        .product-card { display: inline-block; width: 200px; margin: 20px; padding: 20px; background: white; border-radius: 10px; }
-        img { width: 100%; border-radius: 5px; }
-        .price { color: #d4af37; font-weight: bold; }
+        /* تم کلی سایت - صورتی پاستیلی و سفید */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff5f7; 
+            color: #5a4a4a;
+        }
+
+        header {
+            background-color: #ffdae0; 
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(216, 112, 147, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            letter-spacing: 8px;
+            color: #d87093;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #a87b8a;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: 0 15px 35px rgba(255, 182, 193, 0.2);
+            border: 1px solid #fce4ec;
+        }
+
+        .product-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(255, 182, 193, 0.4);
+        }
+
+        /* تنظیم عکس‌ها برای اینکه واقعاً شیک به نظر بیان */
+        .product-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 25px;
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 10px 0;
+            color: #4a4a4a;
+        }
+
+        .price {
+            font-size: 1.3rem;
+            color: #d87093;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .buy-btn {
+            background-color: #ffb6c1;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 100%;
+        }
+
+        .buy-btn:hover {
+            background-color: #ff8da1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            color: #a87b8a;
+            font-size: 0.9rem;
+            border-top: 1px solid #ffe4e8;
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to Parfum</h1>
-    
-    <div class="product-card">
-        <!-- اینجا آدرس عکس عطر اولت رو می‌ذاری -->
-        <img src="https://via.placeholder.com/150" alt="Perfume 1">
-        <h3>Classic Rose</h3>
-        <p class="price">$120</p>
+
+    <header>
+        <h1>PARFUM</h1>
+        <p>Pure elegance in every drop.</p>
+    </header>
+
+    <div class="container">
+        <!-- محصول ۱: عطر صورتی و ملایم -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=500&q=80" alt="Pink Perfume">
+            <div class="product-info">
+                <div class="product-name">Velvet Rose</div>
+                <div class="price">$120</div>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- محصول ۲: عطر لوکس و طلایی -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=500&q=80" alt="Luxury Perfume">
+            <div class="product-info">
+                <div class="product-name">Golden Oud</div>
+                <div class="price">$155</div>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- محصول ۳: عطر با گل‌های سفید (تم پاک و روشن) -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=500&q=80" alt="Floral Perfume">
+            <div class="product-info">
+                <div class="product-name">White Jasmine</div>
+                <div class="price">$110</div>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- محصول ۴: عطر با تم شامگاهی و تیره -->
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1563170351-be82bc888bb4?auto=format&fit=crop&w=500&q=80" alt="Dark Perfume">
+            <div class="product-info">
+                <div class="product-name">Midnight Musk</div>
+                <div class="price">$145</div>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+        </div>
     </div>
 
-    <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Perfume 2">
-        <h3>Midnight Oud</h3>
-        <p class="price">$150</p>
-    </div>
+    <footer>
+        &copy; 2026 Parfum Luxury Brand. Made with Love.
+    </footer>
+
 </body>
-</html>
-
+    </html>
